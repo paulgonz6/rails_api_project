@@ -1,23 +1,18 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1>Address to Weather</h1>
-  </div>
-</div>
-
-<div class="container">
+<div class="containter">
   <div class="row">
-    <div class="col-md-12">
-      <p class="lead">To find out the weather at a particular address, add it to the end of this url:</p>
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <h1>Please enter address</h1>
+      <%= form_tag("/test", method: "get") do %>
+        <div class="form-group">
+          <%= label_tag(:address, "Address:") %><br>
+          <%= text_field_tag(:address) %>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      <% end %>
 
-      <pre><code>http://localhost:3000/weather/[address goes here]</code></pre>
-
-      <p class="lead">For example,</p>
-
-      <p class="lead"><a href="http://localhost:3000/weather/5807+S+Woodlawn+Ave">http://localhost:3000/weather/5807+S+Woodlawn+Ave</a></p>
-
-      <p class="lead"><a href="http://localhost:3000/weather/450+N+Cityfront+Plaza+Dr+Chicago+IL+60611">http://localhost:3000/weather/450+N+Cityfront+Plaza+Dr+Chicago+IL+60611</a></p>
-
-      <p class="lead">Remember, spaces are not allowed in URLs!</p>
     </div>
   </div>
 </div>
+
+<hr/>
+

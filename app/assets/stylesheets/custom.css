@@ -1,0 +1,11 @@
+a,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type="text"] {
+  width: 100%;
+}

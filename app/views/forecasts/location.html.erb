@@ -1,0 +1,15 @@
+<div class="containter">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 well well-lg">
+      <p>The weather for <%= @the_address %> is: </p>
+      <h3><small>Current temperature:</small> <%= @the_temperature %></h3>
+      <h3><small>The outlook for the next hour is:</small> <%= @the_hour_outlook %></h3>
+      <h3><small>The outlook for the next day is:</small> <%= @the_day_outlook %></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <p class="btn btn-primary"><a href="/">Search New Location</a></p>
+    </div>
+  </div>
+</div>
