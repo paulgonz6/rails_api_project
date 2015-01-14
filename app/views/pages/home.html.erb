@@ -4,7 +4,6 @@
       <h1>Please enter address</h1>
       <%= form_tag("/test", method: "get") do %>
         <div class="form-group">
-          <%= label_tag(:address, "Address:") %><br>
           <%= text_field_tag(:address) %>
         </div>
         <button type="submit" class="btn btn-primary">Search</button>
